@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="smart.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="Hero" id="Hero">
+        <video autoplay muted loop >
+            <source src="images/herobg.mp4">
+        </video>
+        <div class="Logo">
+            <svg fill="#375ea1" height="50px" width="50px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	          viewBox="0 0 512 512">
+		      <path d="M378.256,94.964c-4.824,0-9.481,0.73-13.868,2.08V91.47c0-26.06-21.2-47.26-47.259-47.26c-4.833,0-9.499,0.732-13.893,2.087C302.719,20.681,281.736,0,256,0s-46.719,20.681-47.235,46.297
+			   c-4.394-1.355-9.059-2.087-13.893-2.087c-26.059,0-47.259,21.2-47.259,47.26v54.098c-4.388-1.349-9.044-2.08-13.869-2.08c-26.06,0-47.26,21.2-47.26,47.26v110.298l44.006,107.461V512h251.428V408.478l43.597-107.461V142.224
+			   C425.515,116.165,404.315,94.964,378.256,94.964z M239.304,478.609h-12.455v-95.127h12.455V478.609z M285.151,478.609h-12.455v-95.127h12.455V478.609z M392.125,294.501h-0.001l-43.597,107.461v76.646h-29.985v-95.127h13.444l32.402-75.844v-31.902
+			   c2.462-3.397,3.93-7.561,3.93-12.078c0-11.391-9.235-20.626-20.626-20.626c-11.391,0-20.626,9.235-20.626,20.626c0,4.516,1.468,8.68,3.93,12.076v25.069l-12.454,29.152v-68.311c2.462-3.397,3.93-7.561,3.93-12.077
+			   c0-11.391-9.235-20.626-20.626-20.626c-11.391,0-20.626,9.235-20.626,20.626c0,4.516,1.468,8.681,3.93,12.078v88.444h-12.456v-88.445c2.462-3.397,3.93-7.561,3.93-12.078c0-11.391-9.235-20.626-20.626-20.626c-11.391,0-20.626,9.235-20.626,20.626
+			   c0,4.516,1.468,8.68,3.93,12.078v88.445h-12.455v-88.444c2.462-3.397,3.93-7.561,3.93-12.078c0-11.391-9.235-20.626-20.626-20.626s-20.626,9.235-20.626,20.626c0,4.516,1.468,8.68,3.93,12.077v68.311l-12.454-29.152v-25.069c2.462-3.397,3.93-7.561,3.93-12.077
+			   c0-11.391-9.235-20.626-20.626-20.626c-11.391,0-20.626,9.235-20.626,20.626c0,4.517,1.468,8.681,3.93,12.078v31.902l32.402,75.844h13.444v95.127h-29.576v-76.674l-44.006-107.461V190.748c0-7.648,6.221-13.868,13.869-13.868
+			   c7.648,0,13.868,6.221,13.868,13.868v36.536h33.391V91.47c0-7.648,6.221-13.869,13.867-13.869c7.648,0,13.869,6.221,13.869,13.86v115.173h33.391V47.26c0-7.648,6.221-13.869,13.869-13.869c7.648,0,13.869,6.221,13.869,13.869v155.517h33.391V91.47
+			   c0-7.648,6.221-13.869,13.869-13.869c7.647,0,13.867,6.221,13.867,13.869v129.554h33.391v-78.799c0-7.648,6.221-13.869,13.869-13.869c7.648,0,13.868,6.221,13.868,13.869V294.501z"/>
+            </svg>
+            <h1>SmartLimb</h1>
+        </div>
+        <div class="hero-content">
+            <h1>Prosthetic Vision</h1>
+            <p id="typing-effect"></p>
+            <a href="#Design" id="go-to-design">Explore Designs</a>
+        </div>
+    </section>
+    <!-- Design Section -->
+    <section class="Design" id="Design">
+        <div class="image-box">
+            <h1>Design Your Bionic</h1>
+           <img id="limb-image" src="images/design.jpg" alt="" />
+           
+        </div>
+       <div class="options-box">
+           <div class="option-group" data-type="part">
+               <h2>Select Part</h2>
+               <div class="cards" id="part-options">
+                  <div class="card" data-value="Arm" data-image="images/arm.jpg">Arm</div>
+                  <div class="card" data-value="Hand" data-image="images/hand.jpg">Hand</div>
+                  <div class="card" data-value="Leg" data-image="images/leg.jpg">Leg</div>
+               </div>
+            </div>
+            <div class="option-group" data-type="color">
+               <h2>Select Color</h2>
+               <div class="cards color" id="color-options">
+                  <div class="card" data-value="Black">
+                    Black
+                    <span class="circle-color" style="background-color: black;"></span>
+                  </div>
+                  <div class="card" data-value="Electric Blue">
+                    Electric Blue
+                    <span class="circle-color" style="background-color: #15004a;"></span>
+                  </div>
+                  <div class="card" data-value="Silver">
+                    Silver
+                    <span class="circle-color" style="background-color: #9d9898;"></span>
+                  </div>
+                </div>
+            </div>
+            <div class="option-group" data-type="ability">
+                <h2>Select Ability</h2>
+                <div class="cards ability" id="ability-options">
+                  <div class="card" data-value="Adaptive Grip">
+                    Adaptive Grip
+                    <i class="fas fa-border-all"></i>
+                  </div>
+                  <div class="card" data-value="Touch Sensing">
+                    Touch Sensing
+                    <i class="fas fa-hand-pointer"></i>
+                  </div>
+                  <div class="card" data-value="Neural Control">
+                    Neural Control
+                    <i class="fas fa-robot"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="option-group" data-type="age">
+                <h2>Select Age Group</h2>
+                <div class="cards" id="age-options">
+                  <div class="card" data-value="Child">Child</div>
+                  <div class="card" data-value="Adult">Adult</div>
+                  <div class="card" data-value="Elderly">Elderly</div>
+                </div>
+            </div>
+            <div id="summary">
+               💡 You Selected :
+                <ul id="summary-list">
+                    <li>Part : </li>
+                    <li>Color : </li>
+                    <li>Ability :  </li>
+                    <li>Age Group : </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- How Section -->
+    <section class="How-it-works" id="How">
+        <h1>How It Works</h1>
+        <div class="steps">
+          <div class="step">
+            <span>1</span>
+            <h3>Osseointegration</h3>
+            <button class="btn" onclick="openPopup(this)">Show More</button>
+          </div>
+       <!-- Popup -->
+          <div class="popup-overlay popup">
+            <div class="popup-content">
+               <span class="close-btn" onclick="closePopup(this)">×</span>
+               <p>➡ A titanium implant is inserted into the bone to connect the prosthetic directly to the skeleton. This gives more control and stability.</p>
+               <video width="100%" controls>
+                  <source src="images/step1.mp4" type="">
+                  Your browser does not support the video tag.
+               </video>
+            </div>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <h3>Neural Implant</h3>
+            <button class="btn" onclick="openPopup(this)">Show More</button>
+          </div>
+       <!-- Popup -->
+          <div class="popup-overlay popup">
+            <div class="popup-content">
+               <span class="close-btn" onclick="closePopup(this)">×</span>
+               <p>➡ Tiny electrodes are implanted into nerves and muscles. These electrodes pick up signals from the brain.</p>
+               <video width="100%" controls>
+                  <source src="images/step2.mp4" type="">
+                  Your browser does not support the video tag.
+               </video>
+            </div>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <h3>Decoding Signals</h3>
+            <button class="btn" onclick="openPopup(this)">Show More</button>
+          </div>
+       <!-- Popup -->
+          <div class="popup-overlay popup">
+            <div class="popup-content">
+               <span class="close-btn" onclick="closePopup(this)">×</span>
+               <p>➡ This step is about reading and understanding the signals from the user’s body (like brain or muscle signals) to control the prosthetic device.</p>
+               <video width="100%" controls>
+                  <source src="images/step3.mp4" type="">
+                   Your browser does not support the video tag.
+               </video>
+            </div>
+          </div>
+          <div class="step">
+            <span>4</span>
+            <h3>Virtual Training</h3>
+            <button class="btn" onclick="openPopup(this)">Show More</button>
+          </div>
+       <!-- Popup -->
+          <div class="popup-overlay popup">
+            <div class="popup-content">
+               <span class="close-btn" onclick="closePopup(this)">×</span>
+               <p>➡ This is a practice stage where the user trains in a virtual environment (on a screen) to learn how to control the prosthesis.</p>
+               <video width="100%" controls>
+                  <source src="images/step4.mp4" type="">
+                   Your browser does not support the video tag.
+               </video>
+            </div>
+          </div>
+          <div class="step">
+            <span>5</span>
+            <h3>Fiting Prosthesis</h3>
+            <button class="btn" onclick="openPopup(this)">Show More</button>
+          </div>
+       <!-- Popup -->
+          <div class="popup-overlay popup">
+            <div class="popup-content">
+               <span class="close-btn" onclick="closePopup(this)">×</span>
+               <p>➡ This is the step where the artificial limb is physically attached and adjusted to fit the user’s body comfortably and correctly.</p>
+               <video width="100%" controls>
+                  <source src="images/step5.mp4" type="">
+                   Your browser does not support the video tag.
+               </video>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Comparison Section  -->
+    <section class="comparison-section" id="Comparison">
+       <h1>Human <span>VS</span> Smart Limb</h1>
+       <table class="comparison-table">
+         <thead>
+           <tr>
+             <th>📝 Feature</th>
+             <th>Natural Arm</th>
+             <th>Bionic Arm</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>🏃 Grip Speed</td>
+             <td>Fast and responsive</td>
+             <td>Moderate and mechanical</td>
+           </tr>
+           <tr>
+             <td>🌡️Heat Sensation</td>
+             <td>Fully sensitive to temperature</td>
+             <td>No heat detection</td>
+           </tr>
+           <tr>
+             <td>🧠 Mind Control</td>
+             <td>Not available</td>
+             <td>Enabled through neural signals</td>
+           </tr>
+         </tbody>
+       </table>
+    </section>
+    <!-- Real Stories -->
+    <section class="real-stories" id="Stories">
+      <h1>Real Stories</h1>
+      <h4>" Behind every limb is a story worth telling..."</h4>
+      <div class="stories-container">
+        <div class="story-card" onclick="this.classList.toggle('flipped')">
+           <div class="card-inner">
+             <div class="card-front">
+               <img src="images/ali-leg.jpg" alt="Person 1">
+               <h3>Ali</h3>
+             </div>
+             <div class="card-back">
+               <h3 class="name">Name : Ali</h3>
+               <h3 class="age">Age : 19</h3>
+               <p>     
+                Ali was a 19-year-old boy who loved running and playing football with his friends. 
+                After a tragic accident, he lost one of his legs. It was the most difficult time of his life 
+                he felt like he had lost a part of who he was. But instead of letting the pain define him, Ali faced the challenge head-on. 
+                He received a smart prosthetic leg and started training again, slowly but surely. Within a year, he was back on the field, stronger and more determined than ever. 
+                Ali now motivates other kids with disabilities to keep chasing their dreams no matter what.
+              </p>
+             </div>
+           </div>
+        </div>
+        <div class="story-card" onclick="this.classList.toggle('flipped')">
+           <div class="card-inner">
+             <div class="card-front">
+               <img src="images/sara-arm.jpg" alt="Person 2">
+               <h3>Sara</h3>
+             </div>
+             <div class="card-back">
+               <h3 class="name">Name : Sara</h3>
+               <h3 class="age">Age : 25</h3>
+               <p>
+                 Sara was an active and creative girl who loved to paint and play the piano. One day, she was involved in a serious car accident that caused her to lose her right hand.
+                 At first, she felt broken like her dreams were no longer possible. But Sara didn’t give up. With the help of her family, therapists, and a new bionic hand, she learned how to paint again this time with even more passion.
+                 She even returned to playing the piano, proving that strength isn’t just in the body, 
+                 but in the heart and mind. Today, Sara inspires others with her art and her story of resilience.
+               </p>
+             </div>
+           </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <h1 class="about-title">About SmartLimb</h1>
+    <section class="about" id="About">
+      <div class="text">
+         <p><strong>SmartLimb</strong> isn’t just about prosthetics – it’s about possibility. We believe that technology has the power to restore movement, dignity, and dreams. At SmartLimb, every design begins with one goal: helping people reclaim their independence and live without limits.</p>
+         <h2>Our Vision</h2>
+         <p>To lead a new era of prosthetic innovation – where artificial limbs aren’t just replacements, but powerful tools for transformation, confidence, and personal growth.</p>
+         <h2>Our Mission</h2>
+         <p>We combine cutting-edge engineering with deep human empathy to create smart, adaptive prosthetics that feel like a natural extension of you – because we know it’s not just about walking or holding, it’s about living fully.</p>
+         <h2>Why SmartLimb?</h2>
+         <p>Because strength is more than physical. At SmartLimb, we don’t just build prosthetics – we build hope. With every limb we deliver, we’re helping someone write a new chapter, climb a new mountain, or simply take their child’s hand again. You’re not starting over – you’re starting stronger.</p>
+      </div>
+      <div class="videos">
+        <video class="video1" autoplay muted loop >
+            <source src="images/about-us.mp4">
+        </video>
+        <video class="video2" autoplay muted loop >
+            <source src="images/about-us2.mp4">
+        </video>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <section class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#Hero">Hero</a></li>
+            <li><a href="#Design">Design</a></li>
+            <li><a href="#How">How</a></li>
+            <li><a href="#Stories">Stories</a></li>
+            <li><a href="#Comparison">Comparison</a></li>
+            <li><a href="#About">About</a></li>
+          </ul>
+        </section>
+        <section class="contact">
+          <h3>Contact Us</h3>
+          <p>📧Email: info@smartlimb.com</p>
+          <p>📞Phone: +20 123 456 789</p>
+          <p>📍Address: Cairo, Egypt</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </section>
+        <section class="subscribe">
+          <h3>Subscribe</h3>
+          <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
+      </div>
+      <div class="footer-logo">
+            <svg fill="#375ea1" height="50px" width="50px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	          viewBox="0 0 512 512">
+		      <path d="M378.256,94.964c-4.824,0-9.481,0.73-13.868,2.08V91.47c0-26.06-21.2-47.26-47.259-47.26c-4.833,0-9.499,0.732-13.893,2.087C302.719,20.681,281.736,0,256,0s-46.719,20.681-47.235,46.297
+			   c-4.394-1.355-9.059-2.087-13.893-2.087c-26.059,0-47.259,21.2-47.259,47.26v54.098c-4.388-1.349-9.044-2.08-13.869-2.08c-26.06,0-47.26,21.2-47.26,47.26v110.298l44.006,107.461V512h251.428V408.478l43.597-107.461V142.224
+			   C425.515,116.165,404.315,94.964,378.256,94.964z M239.304,478.609h-12.455v-95.127h12.455V478.609z M285.151,478.609h-12.455v-95.127h12.455V478.609z M392.125,294.501h-0.001l-43.597,107.461v76.646h-29.985v-95.127h13.444l32.402-75.844v-31.902
+			   c2.462-3.397,3.93-7.561,3.93-12.078c0-11.391-9.235-20.626-20.626-20.626c-11.391,0-20.626,9.235-20.626,20.626c0,4.516,1.468,8.68,3.93,12.076v25.069l-12.454,29.152v-68.311c2.462-3.397,3.93-7.561,3.93-12.077
+			   c0-11.391-9.235-20.626-20.626-20.626c-11.391,0-20.626,9.235-20.626,20.626c0,4.516,1.468,8.681,3.93,12.078v88.444h-12.456v-88.445c2.462-3.397,3.93-7.561,3.93-12.078c0-11.391-9.235-20.626-20.626-20.626c-11.391,0-20.626,9.235-20.626,20.626
+			   c0,4.516,1.468,8.68,3.93,12.078v88.445h-12.455v-88.444c2.462-3.397,3.93-7.561,3.93-12.078c0-11.391-9.235-20.626-20.626-20.626s-20.626,9.235-20.626,20.626c0,4.516,1.468,8.68,3.93,12.077v68.311l-12.454-29.152v-25.069c2.462-3.397,3.93-7.561,3.93-12.077
+			   c0-11.391-9.235-20.626-20.626-20.626c-11.391,0-20.626,9.235-20.626,20.626c0,4.517,1.468,8.681,3.93,12.078v31.902l32.402,75.844h13.444v95.127h-29.576v-76.674l-44.006-107.461V190.748c0-7.648,6.221-13.868,13.869-13.868
+			   c7.648,0,13.868,6.221,13.868,13.868v36.536h33.391V91.47c0-7.648,6.221-13.869,13.867-13.869c7.648,0,13.869,6.221,13.869,13.86v115.173h33.391V47.26c0-7.648,6.221-13.869,13.869-13.869c7.648,0,13.869,6.221,13.869,13.869v155.517h33.391V91.47
+			   c0-7.648,6.221-13.869,13.869-13.869c7.647,0,13.867,6.221,13.867,13.869v129.554h33.391v-78.799c0-7.648,6.221-13.869,13.869-13.869c7.648,0,13.868,6.221,13.868,13.869V294.501z"/>
+            </svg>
+            <h1>SmartLimb</h1>
+      </div>
+      <p class="copy-rights">&copy; 2025 SmartLimb. All rights reserved.</p>
+    </footer>
+    <script src="smart.js"></script>
+</body>
+</html>
