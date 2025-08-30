@@ -176,17 +176,8 @@ button {
 }
 button:hover {
       background-color: #00cce0;
-    }
-    @media (max-width: 768px) {
-      .Design {
-        flex-direction: column;
-        align-items: center;
-      }
-      .image-box img {
-        width: 80vw;
-        height: auto;
-      }
-    }
+}
+
 /* How Section */
 .How-it-works h1{
   margin-left: 120px;
@@ -584,7 +575,15 @@ h3{
   #typing-effect {
     font-size: 18px;
   }
-
+   /* Design */
+      .Design {
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-box img {
+        width: 80vw;
+        height: auto;
+      }
   /* How it Works */
   .steps {
     flex-direction: column;
