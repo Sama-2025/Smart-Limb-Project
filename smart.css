@@ -111,7 +111,24 @@ body{
     border-bottom: 4px solid #00f0ff;
     padding-bottom: 10px;
     width: fit-content;
-    text-shadow: 2px 2px 6px #1a91d1;
+      text-shadow: 0 0 10px #fff,
+               0 0 20px #fff,
+               0 0 30px #fff;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 40px #fff;
+  }
+}
 }
 .image-box img {
     width: 400px;
